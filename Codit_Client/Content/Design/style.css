@@ -1,0 +1,186 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
+
+
+
+
+.Hfont {
+    font-family: 'Nachlieli CLM', serif;
+}
+
+.homepage {
+    position: relative;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 980px;
+}
+
+
+.menu {
+    position: absolute;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    top: 25%;
+    left: 50px;
+}
+
+    .menu table td {
+        padding-top: 50px;
+        padding-left: 20px;
+        border-left: 2px solid white;
+    }
+
+    .menu .firstElement {
+        padding-top: 0px;
+        font-weight: bold;
+    }
+
+
+.center_menu {
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    resize: both;
+    transform: translate(-50%,-50%);
+}
+
+    .center_menu button {
+        position: absolute;
+        border-radius: 60px;
+        background: 0 0;
+        border: 3px solid white;
+        font-size: 50px;
+        color: white;
+        font-weight: bold;
+        bottom: 0;
+        outline: none;
+    }
+
+.main_logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.bid_btn {
+    padding: 10px 15px;
+    left: 0;
+}
+
+.call_now_btn {
+    padding: 10px 30px;
+    right: 0;
+}
+
+
+.contact_navbar {
+    position: relative;
+    width: 100%;
+    top: 4%;
+}
+
+.list_navbar {
+    position: absolute;
+    left: 50px;
+    width: 50%;
+}
+
+.contact_navbar img {
+    width: 65px;
+    height: 65px;
+    padding-left: 4%;
+}
+
+.logo_navbar img {
+    position: absolute;
+    right: 50px;
+    width: 150px;
+}
+
+/*Second  Session */
+
+.description {
+    position: relative;
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 980px;
+}
+
+.item_desc_website {
+    position: absolute;
+    width: 50%;
+    right: 50px;
+    text-align: right;
+    font-size: 40px;
+}
+
+.item_title {
+    font-size: 120px;
+}
+
+
+/* Third Section */
+
+.item_desc_tech {
+    width: 60%;
+    height: 100%;
+    text-align: right;
+    font-size: xx-large;
+    float: left;
+}
+
+.item_img_tech {
+    position: relative;
+    width: 40%;
+    float: right;
+    top: 35%;
+}
+
+    .item_img_tech img {
+        position: relative;
+        width: 70%;
+        float: right;
+    }
+
+
+
+
+@media (max-width:540px) {
+    .main_logo {
+        transform: translate(-50%);
+    }
+
+    .list_navbar {
+        left: 20px;
+    }
+
+        .list_navbar img {
+            width: 40px;
+            height: 40px;
+        }
+
+    .logo_navbar img {
+        right: 20px;
+        width: 100px;
+        height: 50px;
+    }
+    /*.item_title{
+        font-size:30px;
+    }
+    .item_desc_tech{
+        font-size:20px;
+        right:0;
+        width:100%;
+    }
+    .item_desc_website{
+        right:0;
+        width:100%;
+        font-size:20px;
+    }*/
+}
