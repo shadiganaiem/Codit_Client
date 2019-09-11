@@ -7,74 +7,41 @@
     font-family: 'Nachlieli CLM', serif;
 }
 
+/********* Homepage **********/
 .homepage {
     position: relative;
-    background-image: url("../images/background.png");
+    background: url("../images/background.png") no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
+    height: calc(105vh - 80px);
     width: 100%;
-    height: 980px;
 }
 
 
-.menu {
-    position: absolute;
-    text-align: center;
-    font-size: 50px;
-    color: white;
-    top: 25%;
-    left: 50px;
-}
-
-    .menu table td {
-        padding-top: 50px;
-        padding-left: 20px;
-        border-left: 2px solid white;
+    .homepage .center-Menu {
+        margin-top: 20%;
+        width: 60%;
+        margin-left: 63%;
+        transform: translateX(-50%);
     }
 
-    .menu .firstElement {
-        padding-top: 0px;
-        font-weight: bold;
-    }
+        .homepage .center-Menu button {
+            background: 0 0;
+            border: 2px solid white;
+            border-radius: 30px;
+            font-size: 2vw;
+            width: 100%;
+            height: 20%;
+            color: white;
+            font-weight: bold;
+            margin-top: 10%;
+        }
 
 
-.center_menu {
-    position: absolute;
-    width: 900px;
-    height: 500px;
-    top: 50%;
-    left: 50%;
-    resize: both;
-    transform: translate(-50%,-50%);
-}
-
-    .center_menu button {
-        position: absolute;
-        border-radius: 60px;
-        background: 0 0;
-        border: 3px solid white;
-        font-size: 50px;
-        color: white;
-        font-weight: bold;
-        bottom: 0;
-        outline: none;
-    }
-
-.main_logo {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.bid_btn {
-    padding: 10px 15px;
-    left: 0;
-}
-
-.call_now_btn {
-    padding: 10px 30px;
-    right: 0;
-}
+        .homepage .center-Menu img {
+            width: 90%;
+            margin-left: 6%;
+        }
 
 
 .contact_navbar {
@@ -83,104 +50,524 @@
     top: 4%;
 }
 
-.list_navbar {
-    position: absolute;
-    left: 50px;
-    width: 50%;
-}
-
-.contact_navbar img {
-    width: 65px;
-    height: 65px;
-    padding-left: 4%;
-}
-
-.logo_navbar img {
-    position: absolute;
-    right: 50px;
-    width: 150px;
-}
-
-/*Second  Session */
-
-.description {
-    position: relative;
-    background-image: url("");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 980px;
-}
-
-.item_desc_website {
-    position: absolute;
-    width: 50%;
-    right: 50px;
-    text-align: right;
-    font-size: 40px;
-}
-
-.item_title {
-    font-size: 120px;
-}
-
-
-/* Third Section */
-
-.item_desc_tech {
-    width: 60%;
-    height: 100%;
-    text-align: right;
-    font-size: xx-large;
-    float: left;
-}
-
-.item_img_tech {
-    position: relative;
-    width: 40%;
-    float: right;
-    top: 35%;
-}
-
-    .item_img_tech img {
-        position: relative;
-        width: 70%;
-        float: right;
+    .contact_navbar .list_navbar {
+        position: absolute;
+        left: 5%;
+        width: 50%;
     }
 
-
-
-
-@media (max-width:540px) {
-    .main_logo {
-        transform: translate(-50%);
-    }
-
-    .list_navbar {
-        left: 20px;
-    }
-
-        .list_navbar img {
-            width: 40px;
-            height: 40px;
+        .contact_navbar .list_navbar img {
+            position: absolute;
+            width: 10%;
+            padding-left: 4%;
         }
 
-    .logo_navbar img {
-        right: 20px;
-        width: 100px;
-        height: 50px;
+    .contact_navbar .logo_navbar {
+        position: absolute;
+        right: 5%;
+        width: 50%;
     }
-    /*.item_title{
-        font-size:30px;
+
+        .contact_navbar .logo_navbar img {
+            position: absolute;
+            width: 15%;
+            right: 0;
+        }
+
+.item_facebook {
+    left: 0;
+}
+
+.item_instagram {
+    left: 12%;
+}
+
+.item_call {
+    left: 24%;
+}
+
+/*********   ************/
+
+.website_build {
+    position: relative;
+    background: url("../images/background2.png") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: calc(130vh - 80px);
+    width: 100%;
+}
+
+    .website_build .info_send {
+        width: 24vw;
+        height: 26vw;
+        background: url("../images/background3.png") no-repeat;
+        background-size: cover;
+        border-radius: 40px;
+        margin-left: 24%;
+        margin-top: 10%;
     }
-    .item_desc_tech{
-        font-size:20px;
-        right:0;
-        width:100%;
+
+.info_send_title {
+    margin-left: 50%;
+    margin-top: 5px;
+    width: 100%;
+    transform: translateX(-25%);
+    font-size: 3vw;
+    color: white;
+    font-weight: bold;
+}
+
+.info_send_details {
+    width: 80%;
+    margin-left: 12%;
+}
+
+.info_input {
+    text-align: right;
+    border: 1px solid white;
+    margin-top: 10%;
+    padding-top: 10px;
+    width: 100%;
+    font-size: 1.5vw;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.send_btn {
+    background-color: black;
+    color: white;
+    text-align: right;
+    border: none;
+    margin-left: 60%;
+    font-size: 1.7vw;
+    font-weight: bold;
+    margin-top: 2vw;
+}
+
+    .send_btn i {
+        margin-right: 0.5vw;
+        height: 1vw;
     }
-    .item_desc_website{
-        right:0;
-        width:100%;
-        font-size:20px;
-    }*/
+
+/********* Description ********/
+.website_build .desctiption {
+    width: 100%;
+    height: 60%;
+    right: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+.desctiption_title {
+    margin-right: 5%;
+    font-size: 5vw;
+    color: rgb(36, 193, 171);
+    text-align: right;
+}
+
+.desctiption_details {
+    margin-right: 5%;
+    text-align: right;
+    font-size: 2vw;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.icon-description {
+    text-align: right;
+    margin-right: 5%;
+    margin-top: 6%;
+}
+
+    .icon-description img {
+        width: 8%;
+    }
+
+    .icon-description label {
+        font-size: 2vw;
+        color: rgb(36, 193, 171);
+        font-weight: bold;
+    }
+
+.center-tablet {
+    margin-left: 25%;
+}
+
+    .center-tablet img {
+        width: 40vw;
+    }
+
+/******** technology *******/
+
+.technology {
+    position: relative;
+    height: calc(100vh - 80px);
+    width: 100%;
+}
+
+.technology-icon {
+    position: absolute;
+    width: 40%;
+    right: 0;
+    margin-top: 7%;
+}
+
+    .technology-icon .main-icon {
+        width: 30vw;
+        float: right;
+        margin-top: 2%;
+    }
+
+    .technology-icon .icons img {
+        position: absolute;
+        width: 4vw;
+    }
+
+.icons .html-icon {
+    margin-left: 40%;
+}
+
+.icons .php-icon {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.icons .css-icon {
+    margin-top: 35%;
+    margin-left: 20%;
+}
+
+.icons .press-icon {
+    margin-top: 50%;
+    margin-left: 50%;
+}
+
+
+.technology-description {
+    margin-top: 4%;
+    width: 55%;
+    float: left;
+    text-align: right;
+    font-weight: bold;
+}
+
+    .technology-description .title {
+        font-size: 5vw;
+        color: rgb(36, 193, 171);
+    }
+
+    .technology-description .details {
+        font-size: 1.6vw;
+        margin-left: 5%;
+    }
+
+
+
+/*********** ToKnow ***********/
+
+.to-know {
+    position: relative;
+    background: url(../images/background4.png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: calc(108vh - 80px);
+    width: 100%;
+    border-bottom: 2px solid gray;
+}
+
+    .to-know .title {
+        font-size: 6vw;
+        color: rgb(36, 193, 171);
+        margin-left: 47%;
+        transform: translateX(-40%);
+    }
+
+    .to-know img {
+        width: 100%;
+        margin-left: 2%;
+        margin-top: 11%;
+    }
+
+.text-box {
+    width: 70%;
+    background-color: black;
+    font-size: 2.5vw;
+    margin-top: 13%;
+    margin-left: 15%;
+    text-align: center;
+    color: white;
+    padding: 3%;
+}
+
+.to-know-send-information {
+    background: url(../images/background6.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    float: right;
+    margin-right: 5%;
+    margin-top: 5%;
+    padding: 20px 0 20px 0;
+    border-radius: 8px;
+}
+
+    .to-know-send-information label {
+        font-size: 1.3vw;
+        color: white;
+        text-align: right;
+    }
+
+    .to-know-send-information input {
+        text-align: right;
+        font-size: 1.3vw;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    .to-know-send-information .send {
+        background-color: black;
+        color: white;
+        text-align: right;
+        border: none;
+        font-size: 1.3vw;
+        font-weight: bold;
+        margin-left: 30%;
+        margin-top: 2%;
+        padding-top: 4px;
+        border-radius: 8px;
+    }
+
+        .to-know-send-information .send i {
+            font-size: 1.2vw;
+            margin-right: 3px;
+        }
+
+/********** Our Customers  ***************/
+.customers {
+    position: relative;
+    background-position: bottom;
+    height: calc(100vh - 80px);
+    width: 100%;
+}
+
+    .customers label {
+        font-size: 5vw;
+        color: rgb(36, 193, 171);
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .customers img {
+        margin-left: 54%;
+        transform: translateX(-50%);
+    }
+
+.trawed {
+    width: 100%;
+    margin-left: 5%;
+    margin-top: 20%;
+}
+
+.elmnara {
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.hawaii {
+    width: 70%;
+    margin-top: 6%
+}
+
+.icona {
+    width: 70%;
+    margin-top: 20%
+}
+
+.eljana {
+    width: 25%;
+    margin-top: -38%;
+}
+
+.tabred {
+    width: 41%;
+    margin-top: -35%;
+}
+
+
+
+/************ Presonal Design  *************/
+.personal-design {
+    position: relative;
+    background: url(../images/background5.png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: calc(200vh - 80px);
+    width: 100%;
+}
+
+    .personal-design img {
+        width: 30%;
+        margin-left: 50%;
+        margin-top: 14%;
+        transform: translateX(-50%);
+    }
+
+    .personal-design .wrapper-center {
+        margin-top: 26%;
+    }
+
+    .personal-design .wrapper-right {
+        margin-top: 23%;
+    }
+
+    .personal-design .title {
+        font-size: 2vw;
+        color: black;
+        margin-left: 27%;
+        margin-top: 4%;
+    }
+
+    .personal-design .details {
+        font-size: 4vw;
+        margin-left: 50%;
+        color: rgb(36, 193, 171);
+        transform: translateX(-50%);
+    }
+
+    .personal-design .wrap {
+        margin-top: 31%;
+    }
+
+
+.personal-design-details {
+    font-weight: bold;
+    font-size: 1.8vw;
+    text-align: center;
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.personal-design-title {
+    font-size: 5vw;
+    color: black;
+    font-weight: bold;
+    margin-left: 50%;
+    margin-top: 6%;
+    transform: translateX(-50%);
+}
+/********** customers-files *************/
+
+
+.customers-files {
+    position: relative;
+    height: calc(100vh - 80px);
+    width: 100%;
+}
+
+
+    .customers-files .left-item {
+        width: 100%;
+        border-radius:10px;
+    }
+
+    .customers-files .right-item {
+        width: 94%;
+        margin-bottom: 4%;
+        border-radius:10px;
+    }
+
+    .customers-files .title {
+        font-size: 5vw;
+        color: black;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        color: rgb(36, 193, 171);
+        margin-bottom:3%;
+    }
+    .customers-files button {
+        width: 60%;
+        float: right;
+        margin-right: 50%;
+        transform: translateX(50%);
+        background: url(../images/background3.png) no-repeat;
+        border: none;
+        background-size: cover;
+        font-size: 2vw;
+        color: white;
+        font-weight: bold;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px) {
+}
+
+@media (max-width:991px) {
+    .homepage {
+        height: 500px !important;
+        width: 100vw !important;
+    }
+
+    .website_build {
+        height: 500px !important;
+        width: 100vw !important;
+    }
+
+    .technology {
+        height: 500px !important;
+        width: 100vw !important;
+    }
+}
+
+@media (max-width:550px) {
+    .homepage {
+        height: 348px !important;
+    }
+
+    .website_build {
+        height: 600px !important;
+        width: 100vw !important;
+    }
+
+    .technology {
+        height: 500px !important;
+        width: 100vw !important;
+    }
+
+    .text-box {
+        width: 50%;
+        margin-left: 50%;
+        transform: translateX(-40%);
+        margin-top: 8%;
+    }
+
+    .customers {
+        height: 426px !important
+    }
+
+    .personal-design {
+        height: 800px !important;
+        width: 100%;
+    }
+
+    .eljana, .tabred {
+        margin-top: 20%;
+    }
+
+    .customers-files .left-item, .customers-files .right-item {
+        margin-left: 50%;
+        transform: translateX(-28%);
+    }
 }

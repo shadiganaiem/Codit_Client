@@ -1,4 +1,5 @@
-﻿
+﻿@model Codit_Client.Models.Client
+
 @{
     Layout = null;
 }
@@ -10,56 +11,73 @@
     <meta name="viewport" content="width=device-width" />
     <title>Codit - Software Solutions</title>
     <link rel="stylesheet" href="~/Content/Design/style.css" />
-    <link href='http://serve.fontsproject.com/css?family=Nachlieli+CLM:200'
-          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href='http://serve.fontsproject.com/css?family=Nachlieli+CLM:200' rel='stylesheet' type='text/css'>
 </head>
+
 <body class="Hfont">
 
     <section class="homepage">
         <div class="contact_navbar">
             <div class="list_navbar">
-                <a href="#"><img src="~/Content/images/facebook.png" /></a>
-                <a href="#"><img src="~/Content/images/facebook.png" /></a>
-                <a href="#"><img src="~/Content/images/facebook.png" /></a>
+                <a href="#"><img class="item_facebook" src="~/Content/images/facebook.png" /></a>
+                <a href="#"><img class="item_instagram" src="~/Content/images/instagram.png" /></a>
+                <a href="#"><img class="item_call" src="~/Content/images/facebook.png" /></a>
             </div>
             <div class="logo_navbar">
-                <img src="~/Content/images/test_logo.png" />
+                <img src="~/Content/images/small_logo.png" />
             </div>
         </div>
 
-        <div class="menu">
-            <table>
-                <tbody class="Hfont">
-                    <tr>
-                        <td class="firstElement">דף בית</td>
-                    </tr>
-                    <tr>
-                        <td>תיק עבודות</td>
-                    </tr>
-                    <tr>
-                        <td>מי אנחנו</td>
-                    </tr>
-                    <tr>
-                        <td>צור קשר</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
 
-        <div class="center_menu">
+        <div class="row">
+            <div class="col-md-10 col-md-12 col-sm-12">
+                <div class="center-Menu">
+                    <img class="main_logo" src="~/Content/images/Logo.png" />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="main_btn left_btn">קבל הצעת מחיר</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="main_btn right_btn">התקשר עכשיו</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
 
-            <img class="main_logo" src="~/Content/images/test_logo.png" />
-            <button class="bid_btn">קבל הצעת מחיר</button>
-            <button class="call_now_btn">התקשר עכשיו</button>
+            </div>
         </div>
     </section>
 
-    <section class="description">
+    <section class="website_build">
         <div class="row">
-            <div class="col-md-6 col-xs-12">
-                <div class="item_desc_website">
-                    <p class="item_title">בניית אתרי תדמית</p>
-                    <p>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="info_send">
+                    <p class="info_send_title">נפגש לקפה</p>
+                    <div class="info_send_details">
+                        @using (Html.BeginForm("SendInformation", "Home", FormMethod.Post))
+                        {
+                            <div class="col-md-12">
+                                @Html.TextBoxFor(x => x.fullName, new { @class = "info_input", @placeholder = ":שם" })
+                            </div>
+                            <div class="col-md-12">
+                                @Html.TextBoxFor(x => x.email, new { @class = "info_input", @placeholder = ":דוא\"ל" })
+                            </div>
+
+                            <div class="col-md-12">
+                                @Html.TextBoxFor(x => x.phone, new { @class = "info_input", @placeholder = ":טלפון" })
+                            </div>
+                            <button type="submit" class="send_btn"><i class="fa fa-chevron-left"></i>שליחה</button>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="desctiption">
+                    <p class="desctiption_title">בניית אתרי תדמית</p>
+                    <p dir="rtl" class="desctiption_details">
                         אתר האינטרנט שלכם הוא התדמית שלכם ברשת,
                         האתר מייצג את העסק או הארגון שלכם 24 שעות
                         ביממה, זה לא משנה אם מדובר באתר תדמיתי או
@@ -68,38 +86,295 @@
                         באקטיבנט אנו שמים דגש על מיתוג העסק לפי
                         הסטנדרטים והטרנדים החדשניים ביותר
                     </p>
+                    <div class="row">
+                        <div class="icon-description">
+                            <label>
+                                אנשי מקצוע מובילים בתחום
+                            </label>
+                            <img src="~/Content/images/icon1.png" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class=" icon-description">
+                            <label>
+                                שירות ללא פשרות
+                            </label>
+                            <img src="~/Content/images/icon2.png" />
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6 col-xs-12">
+        </div>
+        <div class="row">
+            <div class="center-tablet">
+                <img src="~/Content/images/tablet.png" />
+            </div>
+        </div>
+    </section>
 
+    <section class="technology">
+        <div class="row">
+            <div class="technology-description">
+                <label class="title">
+                    הטכנולוגיות שלנו
+                </label>
+                <p dir="rtl" class="details">
+                    אקטיבנט מובילה את תחום בניית האתרים בעזרת הטכנולוגיות
+                    PHP המתקדמות ביותר, כאשר בצד השרת השפה השולטת היא
+                    .שנמצאת בכל אחד מהאתרים שפותחו על ידינו בשנים האחרונות
+                    אנו חרטנו על דגלנו שימוש בקוד איכותי ונקי ללא תוספים
+                    (פלאגינים) מיותרים אשר יכולים ליצור עומס מיותר או פרצות
+                    אבטחה. האתרים שנבנים בחברתנו מאובטחים ב %100 עם
+                    אחריות מלאה שכוללת גם גיבוי אוטומטי לקבצי האתר, אפשרות
+                    .שחזור בכל רגע נתון
+                </p>
+                <p dir="rtl" class="details">
+                    אצלנו אתם יכולים להיות בטוחים בבחירה שלכם מכיוון שהאתרים
+                    נבנים בתקן מחמיר במטרה לתת אתר תקין לטווח הארוך בעל
+                    יכולות ניהול נרחבות לתפעול האתר, ירידה עד לפרטים הקטנים
+                    .ביותר
+                </p>
+            </div>
+            <div class="technology-icon">
+                <img class="main-icon" src="~/Content/images/hand.png" />
+                <div class="icons">
+                    <img class="html-icon" src="~/Content/images/html.png" />
+                    <img class="php-icon" src="~/Content/images/php.png" />
+                    <img class="css-icon" src="~/Content/images/css.png" />
+                    <img class="press-icon" src="~/Content/images/WordPress.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="to-know">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <label class="title">
+                    בואו נכיר קצת יותר
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="text-box">
+                    <label>החזון שלנו</label>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="text-box">
+                    <label>איך נוכל לעזור לכם</label>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="text-box" style="background-color:rgb(36, 193, 171);">
+                    <label>קצת עלינו</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <img src="~/Content/images/icon3.png" />
+            </div>
+            <div class="col-md-7">
+                <p dir="rtl" class="desctiption_details">
+                    נולדה CODIT כספקית שירותי מיקור חוץ "Outsourcing "בשיתוף עם
+                    חברות הייטק מובילות ע"י צוות מהנדסים צעירים מובילים בתחומם.
+                    CODIT הובילה פתרונות מורכבים לפרויקטים שיתופיים עם חברות
+                    אחרות באמצעות הצוותים הייצירתים שלה שהתאגדו למתן פתרון מקצועי
+                    לכל בעיה או בקשה שרק אפשר לחלום עליה, !We, it dream can you If
+                    CODIT Can הצטרפו ללקוחות CODIT ותכירו את הפתרונות ושירותים
+                    הנרחבים שלה
+                </p>
+                <div class="to-know-send-information">
+                    <div class="row">
+                        @using (Html.BeginForm("SendInformation", "Home", FormMethod.Post))
+                        {
+                            <div class="col-md-2">
+                                <button type="submit" class="send"><i class="fa fa-chevron-left"></i>שליחה</button>
+                            </div>
+                            <div class="col-md-3">
+                                @Html.TextBoxFor(x => x.phone, new { @class = "", @placeholder = ":טלפון" })
+                            </div>
+                            <div class="col-md-4">
+                                @Html.TextBoxFor(x => x.fullName, new { @class = "", @placeholder = ":שם" })
+                            </div>
+                            <div class="col-md-3">
+                                <label dir="rtl" >תן לנו להכיר אותך:</label>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="customers">
+        <div class="row">
+            <div class="col-md-12">
+                <label class="title">
+                    בין לקוחותינו
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <img class="trawed" src="~/Content/images/trawed.png" />
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <img class="elmnara" src="~/Content/images/elmanara.png" />
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <img class="hawaii" src="~/Content/images/hawaii.png" />
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <img class="icona" src="~/Content/images/icona.png" />
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <img class="eljana" src="~/Content/images/eljana.png" />
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <img class="tabred" src="~/Content/images/tabreed.png" />
             </div>
         </div>
 
     </section>
 
-    <section class="description">
-        <div class="item_desc_tech">
-            <p class="item_title">הטכנולוגיה שלנו</p>
-            <p>
-                אקטיבנט מובילה את תחום בניית האתרים בעזרת הטכנולוגיות
-                PHP המתקדמות ביותר, כאשר בצד השרת השפה השולטת היא
-                .שנמצאת בכל אחד מהאתרים שפותחו על ידינו בשנים האחרונות
-                אנו חרטנו על דגלנו שימוש בקוד איכותי ונקי ללא תוספים
-                (פלאגינים) מיותרים אשר יכולים ליצור עומס מיותר או פרצות
-                אבטחה. האתרים שנבנים בחברתנו מאובטחים ב %100 עם
-                אחריות מלאה שכוללת גם גיבוי אוטומטי לקבצי האתר, אפשרות
-                .שחזור בכל רגע נתון.ביותר
-            </p>
-            <p>
-                אצלנו אתם יכולים להיות בטוחים בבחירה שלכם מכיוון שהאתרים
-                נבנים בתקן מחמיר במטרה לתת אתר תקין לטווח הארוך בעל
-                יכולות ניהול נרחבות לתפעול האתר, ירידה עד לפרטים הקטנים
-                .ביותר
+    <section class="personal-design">
+        <div class="row">
+            <label class="personal-design-title">בניית אתרים בעיצוב אישי</label>
+        </div>
+        <div class="row">
+            <p class="personal-design-details" dir="rtl">
+                ב Codit כל אתר נבנה בהתאמה אישית לפי דרישת הלקוח ותחום העסק שלו , תפיסת העולם שלנו
+                היא שלכל עסק יש את הייחדיות שלו אותה אנו נדרשים להמחיש התהליך העיצוב האתר על מנת
+                לשקף את החזון של העסק ברשת האינטרנט בצורה מושלמת
             </p>
         </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="row">
+                    <img src="~/Content/images/icon4.png" />
+                </div>
+                <div class="row">
+                    <label class="title">
+                        אתרים שבנינו לעסקים
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="details">
+                        +100
+                    </label>
+                </div>
 
-        <div class="item_img_tech">
-            <img src="~/Content/images/tech_hand.png" />
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="row">
+                    <img class="wrapper-center" src="~/Content/images/icon5.png" />
+                </div>
+                <div class="row">
+                    <label class="title">
+                        אתרים שבנינו לעסקים
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="details">
+                        100%
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="row">
+                    <img class="wrapper-right" src="~/Content/images/icon6.png" />
+                </div>
+                <div class="row">
+                    <label class="title">
+                        אתרים שבנינו לעסקים
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="details">
+                        100%
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="row">
+                    <img class="wrapper-right" src="~/Content/images/icon7.png" />
+                </div>
+                <div class="row">
+                    <label class="title">
+                        אתרים שבנינו לעסקים
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="details">
+                        +50
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="row">
+                    <img class="wrapper-center wrap" src="~/Content/images/icon8.png" />
+                </div>
+                <div class="row">
+                    <label class="title">
+                        אתרים שבנינו לעסקים
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="details">
+                        +100
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="row">
+                    <img class="wrapper-right" src="~/Content/images/icon9.png" />
+                </div>
+                <div class="row">
+                    <label class="title">
+                        אתרים שבנינו לעסקים
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="details">
+                        +100
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="customers-files">
+        <div class="row">
+            <div class="col-md-12">
+                <label class="title">
+                    תיק עבודות בניית אתרים
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="left-item" src="~/Content/images/icon10.jpg" />
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+
+                        <img class="right-item" src="~/Content/images/icon11.jpg" />
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="left-item" src="~/Content/images/icon12.jpg" />
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="right-item" src="~/Content/images/test.jpg" />
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <button type="submit"><i class="fa fa-chevron-left"></i>לצפיה בכל העבודות</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

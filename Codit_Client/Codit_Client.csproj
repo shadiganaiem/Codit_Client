@@ -124,6 +124,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Client.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -132,11 +133,43 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Design\style.css" />
+    <Content Include="Content\images\6pic.png" />
     <Content Include="Content\images\background.png" />
+    <Content Include="Content\images\Background2.png" />
+    <Content Include="Content\images\background3.png" />
+    <Content Include="Content\images\background4.png" />
+    <Content Include="Content\images\background5.png" />
+    <Content Include="Content\images\background6.png" />
+    <Content Include="Content\images\css.png" />
+    <Content Include="Content\images\eljana.png" />
+    <Content Include="Content\images\elmanara.png" />
     <Content Include="Content\images\facebook.png" />
-    <Content Include="Content\images\Logo.jpeg" />
-    <Content Include="Content\images\tech_hand.png" />
-    <Content Include="Content\images\test_logo.png" />
+    <Content Include="Content\images\hand.png" />
+    <Content Include="Content\images\hawaii.png" />
+    <Content Include="Content\images\html.png" />
+    <Content Include="Content\images\icon1.png" />
+    <Content Include="Content\images\icon10.jpg" />
+    <Content Include="Content\images\icon11.jpg" />
+    <Content Include="Content\images\icon12.jpg" />
+    <Content Include="Content\images\icon13.jpg" />
+    <Content Include="Content\images\icon2.png" />
+    <Content Include="Content\images\icon3.png" />
+    <Content Include="Content\images\icon4.png" />
+    <Content Include="Content\images\icon5.png" />
+    <Content Include="Content\images\icon6.png" />
+    <Content Include="Content\images\icon7.png" />
+    <Content Include="Content\images\icon8.png" />
+    <Content Include="Content\images\icon9.png" />
+    <Content Include="Content\images\icona.png" />
+    <Content Include="Content\images\instagram.png" />
+    <Content Include="Content\images\Logo.png" />
+    <Content Include="Content\images\php.png" />
+    <Content Include="Content\images\small_logo.png" />
+    <Content Include="Content\images\tablet.png" />
+    <Content Include="Content\images\tabreed.png" />
+    <Content Include="Content\images\test.jpg" />
+    <Content Include="Content\images\trawed.png" />
+    <Content Include="Content\images\WordPress.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -169,7 +202,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
