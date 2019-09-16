@@ -126,6 +126,8 @@
     </Compile>
     <Compile Include="Models\Client.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Interfaces\IMailService.cs" />
+    <Compile Include="Services\MailService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -172,10 +174,12 @@
     <Content Include="Content\images\icona.png" />
     <Content Include="Content\images\instagram.png" />
     <Content Include="Content\images\Logo.png" />
+    <Content Include="Content\images\phone.png" />
     <Content Include="Content\images\php.png" />
     <Content Include="Content\images\qoutes.png" />
     <Content Include="Content\images\quote.png" />
     <Content Include="Content\images\small_logo.png" />
+    <Content Include="Content\images\start.jpg" />
     <Content Include="Content\images\tablet.png" />
     <Content Include="Content\images\tabreed.png" />
     <Content Include="Content\images\test.jpg" />
@@ -215,6 +219,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\SiteScripts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

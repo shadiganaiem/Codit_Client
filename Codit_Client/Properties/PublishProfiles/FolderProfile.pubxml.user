@@ -16,10 +16,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/10/2013 17:29:20</publishTime>
     </File>
     <File Include="bin/Codit_Client.dll">
-      <publishTime>09/14/2019 18:06:00</publishTime>
+      <publishTime>09/16/2019 17:19:28</publishTime>
     </File>
     <File Include="bin/Codit_Client.pdb">
-      <publishTime>09/14/2019 18:06:00</publishTime>
+      <publishTime>09/16/2019 17:19:28</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>05/24/2018 14:38:22</publishTime>
@@ -217,7 +217,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/07/2019 10:00:59</publishTime>
     </File>
     <File Include="Content/Design/style.css">
-      <publishTime>09/14/2019 18:05:09</publishTime>
+      <publishTime>09/16/2019 17:02:49</publishTime>
     </File>
     <File Include="Content/images/6pic.png">
       <publishTime>09/11/2019 14:48:49</publishTime>
@@ -265,7 +265,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/14/2019 15:42:48</publishTime>
     </File>
     <File Include="Content/images/hand2.png">
-      <publishTime>09/14/2019 15:42:50</publishTime>
+      <publishTime>09/16/2019 12:34:27</publishTime>
     </File>
     <File Include="Content/images/hawaii.png">
       <publishTime>09/14/2019 15:42:36</publishTime>
@@ -336,6 +336,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/images/Logo.png">
       <publishTime>09/14/2019 15:42:47</publishTime>
     </File>
+    <File Include="Content/images/phone.png">
+      <publishTime>09/15/2019 16:32:13</publishTime>
+    </File>
     <File Include="Content/images/php.png">
       <publishTime>09/14/2019 15:42:49</publishTime>
     </File>
@@ -347,6 +350,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/images/small_logo.png">
       <publishTime>09/14/2019 15:42:37</publishTime>
+    </File>
+    <File Include="Content/images/start.jpg">
+      <publishTime>09/16/2019 14:21:22</publishTime>
     </File>
     <File Include="Content/images/tablet.png">
       <publishTime>09/14/2019 15:42:42</publishTime>
@@ -430,7 +436,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/07/2019 10:01:01</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>09/14/2019 17:55:47</publishTime>
+      <publishTime>09/16/2019 17:05:07</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>09/07/2019 10:00:58</publishTime>
@@ -445,7 +451,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/07/2019 10:00:58</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/14/2019 17:34:57</publishTime>
+      <publishTime>09/16/2019 17:19:28</publishTime>
     </File>
   </ItemGroup>
 </Project>

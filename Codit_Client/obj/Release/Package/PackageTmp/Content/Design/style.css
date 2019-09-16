@@ -13,6 +13,67 @@
 .p {
     font-size: 18px;
 }
+
+.counter {
+    margin: 1.5%;
+    font-size: 50px;
+    background-color: #FF6F6F;
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+    vertical-align: middle;
+}
+
+.menu-navbar {
+    float: right;
+    margin-top: 5%;
+    margin-right: 3%;
+    visibility:hidden;
+}
+
+    .menu-navbar button {
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 2vw;
+        color: white;
+    }
+
+.sidebar {
+    height: 80%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    right: 0;
+    transition: 0.5s;
+    padding-top: 60px;
+    transform: translateY(-50%);
+}
+
+    .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 2vw;
+        color: white;
+        display: block;
+        transition: 0.3s;
+        margin-top: 10%;
+    }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+    .sidebar .closebtn {
+        top: 0;
+        right: 0;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+
+
 /********* Homepage **********/
 .homepage {
     position: relative;
@@ -26,9 +87,10 @@
     .homepage .center-Menu {
         position: relative;
         margin-left: 50%;
-        width: 50%;
-        margin-top: 5%;
-        transform: translateX(-50%);
+        width: 90%;
+        margin-top: 50%;
+        /* transform: translateX(-50%); */
+        transform: translate(-50%, -50%);
     }
 
         .homepage .center-Menu button {
@@ -36,11 +98,13 @@
             border: 2px solid white;
             border-radius: 30px;
             font-size: 2vw;
-            width: 100%;
+            width: 50%;
             height: 20%;
             color: white;
             font-weight: bold;
             margin-top: 10%;
+            margin-left: 50%;
+            transform: translateX(-50%);
         }
 
 
@@ -57,8 +121,18 @@
 }
 
 
+.menu-desktop {
+    color: white;
+    direction: rtl;
+    font-size: 2vw;
+    margin-top: 70%;
+    margin-right: 8%;
+    transform: translateY(-50%);
+}
+    .menu-desktop li {
+        margin-top: 5%;
+    }
 /*********   ************/
-
 .website_build {
     position: relative;
     background: url("../images/background2.png") no-repeat;
@@ -244,9 +318,7 @@
     background: url(../images/background4.png) no-repeat;
     background-size: cover;
     background-position: bottom;
-    height: calc(108vh - 80px);
     width: 100%;
-    border-bottom: 2px solid gray;
 }
 
     .to-know .title {
@@ -273,6 +345,8 @@
     border-radius: 3vw;
     margin-left: 50%;
     transform: translateX(-50%);
+    border: none;
+    outline: none;
 }
 
 .to-know-send-information {
@@ -297,6 +371,7 @@
         width: 100%;
         border-radius: 12px;
         border: none;
+        padding-right: 5px;
     }
 
     .to-know-send-information .send {
@@ -319,7 +394,6 @@
 .customers {
     position: relative;
     background-position: bottom;
-    height: calc(80 - 80px);
     width: 100%;
 }
 
@@ -372,10 +446,9 @@
 /************ Presonal Design  *************/
 .personal-design {
     position: relative;
-    background: url(../images/background5.png) no-repeat;
+    background: url(../images/6pic.png) no-repeat;
     background-size: cover;
     background-position: bottom;
-    height: calc(200vh - 80px);
     width: 100%;
 }
 
@@ -403,9 +476,8 @@
 
     .personal-design .details {
         font-size: 4vw;
-        margin-left: 50%;
         color: rgb(36, 193, 171);
-        transform: translateX(-50%);
+        text-align: center;
     }
 
     .personal-design .wrap {
@@ -532,8 +604,8 @@
     background-size: cover;
     background-position: bottom;
     position: relative;
-    height: calc(120 vh - 80px);
     width: 100%;
+    height: 120vh;
 }
 
     .blog-websites .title {
@@ -598,6 +670,63 @@
 
 
 
+/************** last section ***************/
+.last-section {
+    background: url(../images/start.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh !important;
+    width: 100%;
+}
+
+
+.buttom-menu {
+    text-align: center;
+    margin-top: 27%;
+    transform: translateY(-50%);
+}
+
+    .buttom-menu .title {
+        font-weight: bold;
+        font-size: 5vw;
+        color: black;
+    }
+
+    .buttom-menu .to-know-send-information {
+        width: 80%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 0;
+        background: no-repeat;
+        background-color: rgb(36, 193, 171,0.4);
+    }
+
+        .buttom-menu .to-know-send-information input {
+            font-size: 2vw;
+        }
+
+        .buttom-menu .to-know-send-information .send {
+            font-size: 2vw;
+        }
+
+.contact {
+    font-weight: bold;
+    color: white;
+    font-size: 35px;
+    float: left;
+    margin-top: 2%;
+}
+
+.contact-image {
+    width: 9%;
+    margin-right: 5%;
+    float: right;
+}
+
+.call {
+    visibility: hidden;
+}
 /***********************************************************************/
 @media (max-width:600px) {
     .row {
@@ -625,14 +754,15 @@
         .homepage .center-Menu {
             margin-top: 50%;
             width: 75%;
+            transform: translateX(-50%);
         }
 
             .homepage .center-Menu button {
-                width: 50%;
+                width: 80%;
                 margin-left: 50%;
                 transform: translateX(-50%);
                 margin-top: 7%;
-                font-size: 10px;
+                font-size: 20px;
             }
 
 
@@ -682,8 +812,7 @@
 
 
     .technology {
-        height: 620px !important;
-        width: 100vw !important;
+        width: 100%;
     }
 
     .technology-description {
@@ -700,7 +829,6 @@
         }
 
     .to-know {
-        height: 631px !important;
         width: 100% !important;
     }
 
@@ -724,10 +852,11 @@
     .text-box {
         margin-left: 50%;
         transform: translateX(-50%);
+        font-size: 10px;
+        width: 100%;
     }
 
     .customers {
-        height: 310px !important;
         width: 100%;
     }
 
@@ -741,7 +870,6 @@
     }
 
     .personal-design {
-        height: 650px !important;
         width: 100%;
     }
 
@@ -770,7 +898,6 @@
     }
 
     .customers-files {
-        height: 580px !important;
         width: 100%;
     }
 
@@ -789,22 +916,116 @@
 
 
 
- 
 
-        .customers-qoutes .title {
-            font-size: 30px;
-            margin-top: 15%;
-        }
 
-        .customers-qoutes .details{
-            font-size:15px;
-        }
+    .customers-qoutes .title {
+        font-size: 30px;
+        margin-top: 15%;
+    }
+
+    .customers-qoutes .details {
+        font-size: 15px;
+    }
 
     .blog-websites .title {
         font-size: 30px;
     }
 
-    .send_btn{
-        font-size:10px;
+    .send_btn {
+        font-size: 10px;
     }
+
+    .last-section {
+        height: 50vh !important;
+        width: 100%;
+    }
+
+    .buttom-menu {
+        transform: none;
+        margin-top: 80px;
+    }
+
+        .buttom-menu .title {
+            font-size: 20px;
+        }
+
+        .buttom-menu .to-know-send-information {
+            width: 40%;
+            padding: 3px;
+        }
+
+            .buttom-menu .to-know-send-information input {
+                width: 100%;
+            }
+
+
+    .contact {
+        font-size: 10px;
+        visibility: hidden;
+    }
+
+    .contact-image {
+        float: none;
+        width: 8%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 5%;
+    }
+
+    .blog-websites {
+        height: 113vh !important;
+        width: 100% !important;
+    }
+
+
+
+        .blog-websites .card {
+            margin-top: 15%;
+            width: 90%;
+        }
+
+
+    .card-body .header {
+        font-size: 15px;
+    }
+
+
+
+
+    .card-body .details {
+        font-size: 12px;
+    }
+
+    .call {
+        visibility: visible;
+    }
+
+    .sidebar {
+        background-color: rgb(36, 193, 171,0.4);
+        border-radius: 31px;
+        text-align: center;
+        padding: 0;
+        height: 70vh;
+    }
+
+        .sidebar a {
+            font-size: 27px;
+            text-align: right;
+            margin-right: 8%;
+        }
+    .menu-navbar button {
+        font-size: 30px;
+    }
+    .menu-navbar{
+        visibility:visible;
+    }
+    .menu-desktop{
+        visibility:hidden;
+    }
+  
 }
+
+
+
+/*****************************************************/
+

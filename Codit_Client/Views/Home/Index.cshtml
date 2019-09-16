@@ -25,41 +25,74 @@
     <link rel="stylesheet" href="~/Content/Design/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <link href='http://serve.fontsproject.com/css?family=Nachlieli+CLM:200' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
 </head>
 
 <body class="Hfont">
-    <div>
-        <section class="homepage">
-            @*<div class="row">
+    <div class="Hfont" style="width: 100% !important; overflow-x: hidden;">
 
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="logo_navbar">
-                        <img src="~/Content/images/small_logo.png" />
-                    </div>
+        <section id="homepage" class="homepage">
+            <div class="menu-navbar">
+                <button onclick="openNav()"><i class="fa fa-bars"></i></button>
+            </div>
+            <div class="position">
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="#homepage">דף בית</a>
+                    <a href="#websiteBuild">בניית אתרי תדמית</a>
+                    <a href="#technology">הטכנולוגיות שלנו</a>
+                    <a href="#toKnow">מי אנחנו</a>
+                    <a href="#contact">צור קשר </a>
                 </div>
-            </div>*@
-            <div class="row">
-                <div class="center-Menu">
-                    <img class="main_logo" src="~/Content/images/Logo.png" />
-                    <div class="col-md-6">
-                        <button class="main_btn left_btn">קבל הצעת מחיר</button>
+            </div>
+
+            <div id="affected">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-xs-12 col-ms-12"></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div id="main" class="center-Menu">
+                            <img class="main_logo" src="~/Content/images/Logo.png" />
+                            <div class="col-md-12">
+                                <button class="main_btn right_btn">התקשר עכשיו</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <button class="main_btn right_btn">התקשר עכשיו</button>
+                    <div class="col-lg-3 col-md-3 col-xs-12 col-ms-12">
+                        <ul id="menu-desktop" class="menu-desktop">
+                            <li>
+                                <a href="#homepage">דף בית</a><br />
+                            </li>
+                            <li>
+                                <a href="#toKnow">מי אנחנו</a>
+                            </li>
+                            <li>
+                                <a href="#websiteBuild">בניית אתרי תדמית</a>
+                            </li>
+                            <li>
+                                <a href="#technology">הטכנולוגיות שלנו</a>
+                            </li>
+                            <li>
+                                <a href="#contact">צור קשר </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="website_build">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <label class="desctiption_title">בניית אתרי תדמית</label>
+        <section id="websiteBuild" class="website_build">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <label class="desctiption_title">בניית אתרי תדמית</label>
+                </div>
             </div>
-            <div class="col-md-12 col-sm-12 col-xs-12 disFlexColumn">
+            <div class="row disFlexColumn">
                 <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
                     <div class="info_send">
                         <p class="info_send_title">נפגש לקפה</p>
@@ -128,11 +161,10 @@
             </div>
         </section>
 
-        <section class="technology">
-            <div class="row disFlexColumn">
+        <section id="technology" class="technology">
+            <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="technology-description">
-                       
                         <label class="title">
                             הטכנולוגיות שלנו
                         </label>
@@ -154,7 +186,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6  col-sm-12 col-xs-12">
+                <div class="col-lg-6 col-md-6  col-sm-12 col-xs-12" style="padding-right: 0 !important;">
                     <div class="technology-icon">
                         <img class="main-icon" src="~/Content/images/hand.png" />
                         <div class="icons">
@@ -168,7 +200,7 @@
             </div>
         </section>
 
-        <section class="to-know">
+        <section id="toKnow" class="to-know">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <label class="title">
@@ -178,19 +210,22 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-4">
-                    <div class="text-box">
-                        <label>החזון שלנו</label>
-                    </div>
+                    <button id="1" class="text-box" onclick="change_description(this.id);">
+                        <i id="arrow1" class="fa fa-arrow-down" style="visibility:hidden"></i>
+                        החזון שלנו
+                    </button>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-4">
-                    <div class="text-box">
-                        <label>איך נוכל לעזור לכם</label>
-                    </div>
+                    <button id="2" class="text-box" onclick="change_description(this.id);">
+                        <i id="arrow2" class="fa fa-arrow-down" style="visibility:hidden"></i>
+                        איך נוכל לעזור לכם
+                    </button>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-4">
-                    <div class="text-box" style="background-color:rgb(36, 193, 171);">
-                        <label>קצת עלינו</label>
-                    </div>
+                    <button id="3" class="text-box" style="background-color:rgb(36, 193, 171);" onclick="change_description(this.id);">
+                        <i id="arrow3" class="fa fa-arrow-down"></i>
+                        קצת עלינו
+                    </button>
                 </div>
             </div>
             <div class="row disFlexColumn">
@@ -199,7 +234,7 @@
                 </div>
                 <div class="col-md-7 col-sm-12 col-xs-12">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                        <p dir="rtl" class="desctiption_details">
+                        <p id="description" dir="rtl" class="desctiption_details">
                             נולדה CODIT כספקית שירותי מיקור חוץ "Outsourcing "בשיתוף עם
                             חברות הייטק מובילות ע"י צוות מהנדסים צעירים מובילים בתחומם.
                             CODIT הובילה פתרונות מורכבים לפרויקטים שיתופיים עם חברות
@@ -299,9 +334,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        <label class="details">
-                            +100
-                        </label>
+                        <div class="details">
+                            <label>+</label>
+                            <label class="num">
+                                100
+                            </label>
+                        </div>
                     </div>
 
                 </div>
@@ -317,9 +355,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        <label class="details">
-                            100%
-                        </label>
+                        <div class="details">
+                            <label>%</label>
+                            <label class="num">
+                                100
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -334,9 +375,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        <label class="details">
-                            100%
-                        </label>
+                        <div class="details">
+                            <label>%</label>
+                            <label class="num">
+                                100
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -354,9 +398,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        <label class="details">
-                            +50
-                        </label>
+                        <div class="details">
+                            <label>+</label>
+                            <label class="num">
+                                50
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -371,9 +418,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        <label class="details">
-                            +100
-                        </label>
+                        <div class="details">
+                            <label>+</label>
+                            <label class="num">
+                                100
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -388,9 +438,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        <label class="details">
-                            +100
-                        </label>
+                        <div class="details">
+                            <label>+</label>
+                            <label class="num">
+                                100
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -413,18 +466,18 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-6">
-                            <img class="left-item" src="~/Content/images/icon10.jpg" />
+                            <img class="left-item w3-animate-left" src="~/Content/images/icon10.jpg" />
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <img class="right-item" src="~/Content/images/icon11.jpg" />
+                            <img class="right-item w3-animate-right" src="~/Content/images/icon11.jpg" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <img class="left-item" src="~/Content/images/icon12.jpg" />
+                            <img class="left-item w3-animate-left" src="~/Content/images/icon12.jpg" />
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <img class="right-item" src="~/Content/images/test.jpg" />
+                            <img class="right-item w3-animate-right" src="~/Content/images/test.jpg" />
                         </div>
                     </div>
                     <div class="row">
@@ -448,7 +501,7 @@
                         </label>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-5 col-xs-5">
+                <div class="col-lg-3 col-md-3 col-sm-5 col-xs-5" style="padding-right: 0 !important;">
                     <img class="hand-icon" src="~/Content/images/hand2.png" />
                 </div>
             </div>
@@ -532,7 +585,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                        <div class="card">
+                        <div class="card position">
                             <img src="~/Content/images/icon17.png" />
                             <div class="card-body">
                                 <label class="header" dir="rtl">
@@ -553,6 +606,114 @@
                 </div>
             </div>
         </section>
+
+        <section id="contact" class="last-section">
+            <div class="row">
+                <div class="buttom-menu">
+                    <div class="row">
+                        <div class="title">
+                            <label>
+                                הצלחה שלכם מתחילה מעכשיו
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="to-know-send-information">
+                            @using (Html.BeginForm("SendInformation", "Home", FormMethod.Post))
+                            {
+                                <div class="row disFlexColumn">
+                                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                        <button type="submit" class="send">שליחה</button>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                        @Html.TextBoxFor(x => x.phone, new { @class = "", @placeholder = ":טלפון" })
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        @Html.TextBoxFor(x => x.email, new { @class = "", @placeholder = ":דוא\"ל" })
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                        @Html.TextBoxFor(x => x.fullName, new { @class = "", @placeholder = ":שם" })
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <a href="https://www.instagram.com/codit_software_solutions/">
+                            <img class="contact-image" src="~/Content/images/instagram.png" />
+                        </a>
+                        <a href="https://www.facebook.com/codit.software.solutions/">
+                            <img class="contact-image" src="~/Content/images/facebook.png" />
+                        </a>
+                        <img class="contact-image call" src="~/Content/images/phone.png" />
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                        <label class="contact">התקשרו עכשיו 079-9690480</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
+
+
+    <script>
+        //Counting up
+        $(".num").counterUp({ delay: 10, time: 2000 });
+
+        $('#mySidebar > a').on('click', function () { closeNav(); });
+
+        //Change description
+        function change_description(id) {
+            var text = document.getElementById('description');
+            if (id == 1) {
+                text.innerHTML = "TEST PARAGRAPH 1";
+                document.getElementById('1').style.backgroundColor = 'rgb(36, 193, 171)';
+                document.getElementById('2').style.backgroundColor = 'black';
+                document.getElementById('3').style.backgroundColor = 'black';
+                document.getElementById('arrow1').style.visibility = 'visible';
+                document.getElementById('arrow2').style.visibility = 'hidden';
+                document.getElementById('arrow3').style.visibility = 'hidden';
+            }
+            if (id == 2) {
+                text.innerHTML = "TEST PARAGRAPH 2";
+                document.getElementById('1').style.backgroundColor = 'black';
+                document.getElementById('2').style.backgroundColor = 'rgb(36, 193, 171)';
+                document.getElementById('3').style.backgroundColor = 'black';
+                document.getElementById('arrow1').style.visibility = 'hidden';
+                document.getElementById('arrow2').style.visibility = 'visible';
+                document.getElementById('arrow3').style.visibility = 'hidden';
+
+
+            }
+            if (id == 3) {
+                text.innerHTML = 'נולדה CODIT כספקית שירותי מיקור חוץ "Outsourcing "בשיתוף עם חברות הייטק מובילות ע"י צוות מהנדסים צעירים מובילים בתחומם. CODIT הובילה פתרונות מורכבים לפרויקטים שיתופיים עם חברות אחרות באמצעות הצוותים הייצירתים שלה שהתאגדו למתן פתרון מקצועי לכל בעיה או בקשה שרק אפשר לחלום עליה, !We, it dream can you If CODIT Can הצטרפו ללקוחות CODIT ותכירו את הפתרונות ושירותים הנרחבים שלה';
+                document.getElementById('1').style.backgroundColor = 'black';
+                document.getElementById('2').style.backgroundColor = 'black'
+                document.getElementById('3').style.backgroundColor = 'rgb(36, 193, 171)';
+                document.getElementById('arrow1').style.visibility = 'hidden';
+                document.getElementById('arrow2').style.visibility = 'hidden';
+                document.getElementById('arrow3').style.visibility = 'visible';
+            }
+        }
+
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById('affected').style.filter = 'blur(8px)';
+            document.getElementById('mySidebar').style.marginRight = '15%';
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById('affected').style.filter = 'none';
+            document.getElementById('mySidebar').style.marginRight = '0';
+        }
+
+
+
+    </script>
+
+
 </body>
 </html>

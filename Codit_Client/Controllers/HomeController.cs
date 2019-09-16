@@ -4,24 +4,27 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Codit_Client.Models;
+using Codit_Client.Services;
 namespace Codit_Client.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+
+        private MailService _mailService = new MailService(); 
+
+            public ActionResult Index()
         {
-
-
             return View(new Client());
         }
 
-       
+
         [HttpPost]
-        public ActionResult SendInformation()
+        public ActionResult SendInformation(Client model)
         {
-
-
-            return View("Index",new Client());
+            _mailService.SendMail(model);
+            return View("Index", new Client());
         }
+
+       
     }
 }
